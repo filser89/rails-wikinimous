@@ -1,0 +1,8 @@
+<div class="container">
+  <div class="articles-container">
+    <% @articles.each do |a| %>
+      <h3><%= link_to a.title, article_path(a), class: "text-decoration-none"  %></h3>
+      <p><%= a.content %></p>
+    <% end %>
+  </div>
+</div>

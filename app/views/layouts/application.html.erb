@@ -10,6 +10,15 @@
   </head>
 
   <body>
+    <div class="container">
+    <div class="d-flex header justify-content-between">
+        <h1>Wikinimous</h1>
+        <%= link_to "New article", new_article_path, class: "btn btn-primary"  %>
+        <%= link_to articles_path do  %>
+          <h1><%= icon('fas', 'bars') %></h1>
+        <% end %>
+      </div>
+    </div>
     <%= yield %>
   </body>
 </html>

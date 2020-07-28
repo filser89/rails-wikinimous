@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="d-flex justify-content-start align-items-center">
+    <h2><%= @article.title %></h2>
+    <%= link_to edit_article_path, class: "p-2" do  %>
+      <%= icon('fas', 'pencil-alt') %>
+    <% end %>
+     <%= link_to article_path, method: :delete, data:{confirm: "Are you sure?"}, class: "p-2" do  %>
+      <%= icon('fas', 'ban') %>
+    <% end %>
+  </div>
+  <p><%= @article.content %></p>
+
+</div>
